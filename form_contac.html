@@ -5,69 +5,166 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
-    <link rel="icon" 
-      type="image/png" 
-      href="icon.png">
+    <link rel="icon" type="image/png" href="icon.png">
+    <style>
+        /*
+        "*" sirve para aplicar a todo
+        */
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            width: 100%;
+            background-color: rgb(123, 215, 243);
+        }
+
+        img {
+            position: sticky;
+            top: 10px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .container {
+            border-radius: 50px;
+            background-color: rgb(224, 255, 226);
+            width:  400px;
+            margin: auto;
+            margin-top: 100px;
+            padding: 20px;
+        }
+
+        label {
+            width: 100%;
+        }
+
+        input, select {
+            /*[type="text"]para seleccionar a cual se aplica el css*/
+            width: 100%;
+            height: 50px;
+            border: 2px solid rgb(43, 64, 255);
+            border-radius: 10px;
+            background-color: rgb(224, 250, 255);
+            background-image: url(writteIcon.png);
+            background-repeat: no-repeat;
+            background-size: 20px;
+            background-position: 10px;
+            padding-left: 40px;
+        }
+
+        button {
+            background-color: rgb(43, 64, 255);
+            border: none;
+            color: black;
+            padding: 10px 100px;
+            margin: 10px 120px;
+            text-decoration: none;
+            box-sizing: border-box;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input:focus {
+            border: 3px solid rgb(43, 64, 255);
+            border-radius: 10px;
+            outline: none;
+        }
+
+
+        ::placeholder {
+            color: black;
+        }
+/*
+        select {
+            width: 90%;
+            padding: 12px 40px;
+            box-sizing: border-box;
+            margin: 8px 15px;
+            border: 2px solid rgb(43, 64, 255);
+            border-radius: 10px;
+            background-color: rgb(224, 250, 255);
+            background-image: url(writteIcon.png);
+            background-repeat: no-repeat;
+            background-size: 20px;
+            background-position: 10px;
+            cursor: pointer;
+        }
+*/
+        select:focus {
+            border: 3px solid rgb(43, 64, 255);
+            border-radius: 10px;
+            outline: none;
+        }
+
+    </style>
+
 </head>
 
 <body>
-    <img 
-     width="250"
-    src="data:image/png;base64,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" alt="">
-    <form action="http://localhost:3000/">
-        <label>
-            Nombre*
-            <br>
-            <input type="text" name="name" required/><br />
-        </label>
-        <br>
-        <label>
-            Apellido*
-            <br>
-            <input type="text" name="lastName" required>
-        </label>
-        <br>
-        <br>
-        <label>
-            Email Address*
-            <br>
-            <input type="text" name="email" required>
-        </label>
-        <br>
-        <br>
-        <label>
-            Phone
-            <br>
-            <input type="number" name="phone">
-        </label>
-        <br>
-        <br>
-        <label>
-            Subject
-            <br>
-            <input type="text" name="subject">
-        </label>
-        <br>
-        <br>
-        <label for="reason"> Reason*</label>
-        <br>
-        <select name="Reason" id="reason">
-            <option value="just to say hi"> Just say hi </option>
-            <option value="business"> Business </option>
-            <option value="software"> Software</option>
-            <option value="other"> Other </option>
-        </select>
-        <br>
-        <br>
-        message 
-        <br>
-        <input type="text">
-        <br>
-        <br>
 
-        <button type="submit"> Enviar </button>
-    </form>
+    <img width="480" src="contact.png" alt="">
+    <div class="container">
 
+
+        <form action="http://localhost:3000/" method="POST">
+            <label>
+                Name*
+                <br>
+                <input type="text" name="name" id="name" required placeholder="put your name here" /><br />
+            </label>
+            <br>
+            <label>
+                LastName*
+                <br>
+                <input type="text" name="lastName" required placeholder="put your lastname here">
+            </label>
+            <br>
+            <br>
+            <label>
+                Email Address*
+                <br>
+                <input type="email  " name="email" required placeholder="put your email here">
+            </label>
+            <br>
+            <br>
+            <label>
+                Phone
+                <br>
+                <input type="number" name="phone" placeholder="put your number here">
+            </label>
+            <br>
+            <br>
+            <label>
+                Subject
+                <br>
+                <input type="text" name="subject" placeholder="put your affair here">
+            </label>
+            <br>
+            <br>
+            <label for="reason"> Reason*</label>
+            <br>
+            <select name="Reason" id="reason" required>
+                <option disabled selected value="select"> select... </option>
+                <option value="just to say hi"> Just say hi </option>
+                <option value="business"> Business </option>
+                <option value="software"> Software</option>
+                <option value="other"> Other </option>
+            </select>
+            <br>
+            <br>
+            Message
+            <br>
+            <input type="text" name="message" id="message" placeholder="writte your message here ">
+            <br>
+            <br>
+
+            <button type="submit"> Enviar </button>
+        </form>
+    </div>
 
 </body>
 
