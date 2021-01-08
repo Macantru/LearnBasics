@@ -6,7 +6,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded());
 
 /**
- * req -> Request - Peticion😂
+ * req -> Request - Peticion
  * res -> Response - Respuesta
  */
 
