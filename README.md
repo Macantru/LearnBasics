@@ -1,4 +1,6 @@
 # LearnBasics
+#### This repository is all about showing what i learn every day
+
 
 ## Git commands
 
