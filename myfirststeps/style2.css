@@ -1,9 +1,9 @@
-
-*{
+* {
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   margin: 5px;
   background-color: rgb(199, 199, 199);
 }
@@ -14,23 +14,22 @@ header {
   align-items: center;
   justify-content: center;
   background-color: white;
- }
- 
- nav {
+}
+
+nav {
   width: 100%;
   background-color: rgb(56, 56, 56);
- }
+}
 
 nav a {
   display: block;
   text-align: center;
   padding: 10px;
   color: white;
- text-decoration: none;
- padding: 15px;
+  text-decoration: none;
+  padding: 15px;
 }
 
- 
 nav a:hover {
   background-color: gray;
   color: black;
@@ -45,7 +44,7 @@ main > section {
   display: flex;
   flex-direction: column;
   width: 80%;
-  margin: 14px 0px 0px 0px ;
+  margin: 14px 0px 0px 0px;
 }
 
 .img {
@@ -56,26 +55,25 @@ main > section {
 }
 
 .section1 {
- background-color: rgb(255, 255, 255);
- padding: 25px;
-
+  background-color: rgb(255, 255, 255);
+  padding: 25px;
 }
 
 .section2 {
   background-color: rgb(255, 255, 255);
-  margin: 15px 0px ;
+  margin: 15px 0px;
   padding: 25px;
 }
 
 aside {
   width: 20%;
-  margin: 0px 0px 0px 14px ;
+  margin: 0px 0px 0px 14px;
 }
 .about {
   background-color: rgb(255, 255, 255);
   padding: 5px 15px;
   height: auto;
-  margin: 14px 0px 0px 0px ;
+  margin: 14px 0px 0px 0px;
 }
 
 .imagen {
@@ -97,7 +95,7 @@ aside {
   flex-direction: column;
   justify-content: space-around;
   padding: 5px 15px;
-  height: 250px; 
+  height: 250px;
 }
 
 .follow {
@@ -112,11 +110,11 @@ footer {
   align-items: center;
   justify-content: center;
   background-color: rgb(170, 170, 170);
- height: 150px;
+  height: 150px;
 }
 
 @media screen and (min-width: 768px) {
-  nav a{
+  nav a {
     display: inline-block;
   }
   nav a:last-child {
@@ -125,20 +123,17 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-main {
-  flex-direction: column;
-  width: 100%;
-  
-}
+  main {
+    flex-direction: column;
+    width: 100%;
+  }
 
-aside {
-  width: 100%;
-  margin: 0px;
-}
+  aside {
+    width: 100%;
+    margin: 0px;
+  }
 
-main > section {
-  width: 100%;
+  main > section {
+    width: 100%;
+  }
 }
-
-}
-
