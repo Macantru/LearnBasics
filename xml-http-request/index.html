@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>ajax</h1>
+  <button id="boton">enviar datos usuario</button>
+  <ul id= "lista-usuarios"></ul>
+  <script src="ejemplo-ajax.js"></script>
+  <style>
+    .alert {
+      padding: 15px;
+      border: 1px solid #d6e9c6;
+      border-radius: 4px;
+      color: #3c763d;
+      background-color: #dff0d8;
+    }
+    </style>
+    
+    <script>
+      let div = document.createElement('div');
+      div.className="alert"
+      div.innerHTML= "<strong> Hola!</strong> has recibido un mensaje importante"
+      document.body.append(div)
+    </script>
+</body>
+</html>
