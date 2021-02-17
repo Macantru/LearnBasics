@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>To do list</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <div class="myDiv">
+      <h3 class="style">My To Do List</h3>
+      <div class="center">
+        <input
+          placeholder="Title..."
+          class="text"
+          id="texto"
+          type="text"
+          onchange="darElValor(this.value)"
+        />
+        <button class="boton" id="boton" onclick="insertarTexto()"> Add </button>
+      </div>
+    <ul id="list"></ul>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
