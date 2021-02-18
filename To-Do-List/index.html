@@ -3,7 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <title>To do list</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
 
   <body>
@@ -13,13 +17,13 @@
         <input
           placeholder="Title..."
           class="text"
-          id="texto"
+          id="text"
           type="text"
           onchange="darElValor(this.value)"
         />
-        <button class="boton" id="boton" onclick="insertarTexto()"> Add </button>
+        <button class="boton" id="boton" onclick="insertListItem()">Add</button>
       </div>
-    <ul id="list"></ul>
+      <ul id="list"></ul>
     </div>
 
     <script src="index.js"></script>

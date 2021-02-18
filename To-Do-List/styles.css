@@ -76,7 +76,7 @@ li > button {
   font-size: 12px;
   font-family: Arial, Helvetica, sans-serif;
 }
-.botonX {
+.buttonX {
   width: 40px;
   border: none;
   cursor: pointer;
@@ -88,7 +88,18 @@ li > button {
   outline: none;
 }
 
-.botonX:hover {
+.buttonX:hover {
   background-color: rgb(255, 62, 62);
   color: white;
 }
+
+.crossOut:nth-child(odd){
+  background-color: gray;
+  text-decoration: line-through;
+}
+.crossOut:nth-child(even){
+  background-color: gray;
+  text-decoration: line-through;
+}
+
+
