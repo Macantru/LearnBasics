@@ -1,0 +1,30 @@
+{
+  "name": "to-do-list",
+  "version": "1.0.0",
+  "description": "to do list",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Macantru/LearnBasics.git"
+  },
+  "keywords": [
+    "to",
+    "do",
+    "list"
+  ],
+  "author": "Miguel Cantillo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Macantru/LearnBasics/issues"
+  },
+  "homepage": "https://github.com/Macantru/LearnBasics#readme",
+  "devDependencies": {
+    "eslint": "^7.20.0"
+  }
+}
